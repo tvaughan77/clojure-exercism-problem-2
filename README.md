@@ -1,14 +1,24 @@
-# app
+# Rna Transcription
 
-A Clojure library designed to ... well, that part is up to you.
+Write a program that, given a DNA strand, returns its RNA complement (per RNA transcription).
 
-## Usage
+Both DNA and RNA strands are a sequence of nucleotides.
 
-FIXME
+The four nucleotides found in DNA are adenine (**A**), cytosine (**C**),
+guanine (**G**) and thymidine (**T**).
 
-## License
+The four nucleotides found in RNA are adenine (**A**), cytosine (**C**),
+guanine (**G**) and uracil (**U**).
 
-Copyright © 2014 FIXME
+Given a DNA strand, its transcribed RNA strand is formed by replacing
+each nucleotide with its complement:
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+* `G` -> `C`
+* `C` -> `G`
+* `T` -> `A`
+* `A` -> `U`
+
+
+## Source
+
+Rosalind [view source](http://rosalind.info/problems/rna)
