@@ -15,13 +15,7 @@
         (empty? sequence) nil
         :else (cons (base-pair (first sequence)) (to-rna-internal (rest sequence)))))
 
-(defn make-str-from-chars
-  "make a string from a sequence of characters"
-  [chars]
-  (reduce str "" chars))
-
 (defn to-rna [sequence]
-    (make-str-from-chars (to-rna-internal (map str sequence))))
-
+  (apply str (to-rna-internal (map str sequence))))
 
 
